@@ -14,6 +14,131 @@
   padding-top:  0;
 
 }
+
+@media only screen and (max-width: 400px) {
+  #div { 
+     background-image: url('background_2.jpg'); 
+  }
+  #myInput {
+    width:85%;
+    margin:0rem;
+  }
+  ul {width: 99%;
+    padding-left:  2%;
+    padding-top: 0.25%;
+  }
+  .imp{
+    right:21%;
+  }
+  #editButton{
+    margin-left: 1.25%;
+  }
+  #doneButton{
+    margin-right: 1.25%;
+    float:right;
+  }
+
+}
+
+@media only screen and (min-width: 400px) {
+  #div { 
+     background-image: url('background_2.jpg'); 
+  }
+  #myInput {
+    width:85%;
+    margin:0rem;
+  }
+  ul {width: 99%;
+    padding-left:  2%;
+    padding-top: 0.25%;
+  }
+  .imp{
+    right:17%;
+  }
+  #editButton{
+    margin-left: 2.75%;
+  }
+  #doneButton{
+    margin-right: 2.75%;
+    float:right;
+  }
+
+}
+@media only screen and (min-width: 768px) {
+  #div { 
+    background-image: url('background.jpg'); 
+ }
+ #myInput {
+   width:55%;
+   margin:0.25rem;
+ }
+ ul {width: 81%;
+   padding-left:  19.5%;
+   padding-top: 0.5%;
+ }
+ .imp{
+   right:11%;
+ }
+ #editButton{
+   margin-left: 19.5%;
+ }
+ #doneButton{
+   margin-right: 19.5%;
+   float:right;
+   
+ }
+
+}
+@media only screen and (min-width: 992px) {
+  #div { 
+    background-image: url('background.jpg'); 
+ }
+ #myInput {
+   width:55%;
+   margin:0.25rem;
+ }
+ ul {width: 80%;
+   padding-left:  20%;
+   padding-top: 0.5%;
+ }
+ .imp{
+   right:11%;
+ }
+ #editButton{
+   margin-left: 20%;
+ }
+ #doneButton{
+   margin-right: 20%;
+   float:right;
+   
+ }
+
+}
+@media only screen and (min-width: 1200px) {
+  #div { 
+    background-image: url('background.jpg'); 
+ }
+ #myInput {
+   width:55%;
+   margin:0.25rem;
+ }
+ ul {width: 80%;
+   padding-left:  20.5%;
+   padding-top: 0.5%;
+ }
+ .imp{
+   right:11%;
+ }
+ #editButton{
+   margin-left: 20.5%;
+ }
+ #doneButton{
+   margin-right: 20.25%;
+   float:right;
+   
+ }
+}
+
 body{
     height:100%;
     background-color: #3973ac;
@@ -42,11 +167,9 @@ h2 {font-size: 3rem;
 #myInput{
     padding: 0.5rem 1rem;
     height: 3.125rem;
-    outline: none;
+    outline:none;
     background-color:#fff;
-    width: 55%;
     font-size: 1.15rem;
-    margin: 0.25rem;
     border-radius:1.563rem;
     border: none;
     transition:0.5s;
@@ -101,25 +224,22 @@ h2 {font-size: 3rem;
    
     
 }
-ul {width: 80%;
-    align-content: center;
+ul {
     margin: 0;
-    padding-left:  20%;
-    padding-top: 0.5%;
-
-    
   }
   
   /* Style the list items */
   ul li {
     cursor: pointer;
     position: relative;
-    padding: 12px 8px 12px 40px;
+    padding: 0.75rem;
+    padding-left:1.8rem;
     list-style-type: none;
     background: #eee;
-    font-size: 18px;
+    font-size: 1.125rem;
     transition: 0.2s;
     border-radius: 1.563rem;
+    align-self: left;
     font-family:'lucida calligraphy';
     
     /* make the list items unselectable */
@@ -152,12 +272,12 @@ ul {width: 80%;
     position: absolute;
     border-color: #fff;
     border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
+    border-width: 0 0.125rem 0.125rem 0;
+    top: 0.625rem;
+    left: 1rem;
     transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
+    height: 0.938rem;
+    width: 0.438rem;
   }
 /* Style the close button */
 .close {
@@ -177,7 +297,6 @@ ul {width: 80%;
   /* style the imp button */
   .imp {
       position: absolute;
-      right: 11%;
       top: 0;
       padding: 0.75rem 1rem 0.75rem 1rem;
      border-radius: 1.563rem;
@@ -190,8 +309,8 @@ ul {width: 80%;
   }
 
 .button_1{
-  width: 7%;
-  padding:11px;
+  
+  padding:0.688rem;
   margin: 0 0;
   cursor:pointer;
   outline: none;
@@ -211,14 +330,83 @@ ul {width: 80%;
   background-color: skyblue;
    
 }
+.button_2{
+  
+  padding:0.688rem;
+  margin: 0 0;
+  cursor:pointer;
+  outline: none;
+  border:none;
+  border-radius: 1.563rem;
+  font-family:'comic sans ms';
+  
+
+}
+.button_2:hover{
+  background-color: pink;
+   
+  
+}
+
+.button_2:active{
+  background-color: skyblue;
+   
+}
 #editButton{
-  margin-left: 21%;
   font-family:'comic sans ms';
 }
 #doneButton{
-  margin-left: 44%;
   font-family:'comic sans ms';
 }
 
 
+
+/*@media only screen and (max-width: 400px) {
+  #div { 
+     background-image: url('background_2.jpg'); 
+  }
+  #myInput {
+    width:85%;
+    margin:0rem;
+  }
+  ul {width: 99%;
+    padding-left:  2%;
+    padding-top: 0.25%;
+  }
+  .imp{
+    right:21%;
+  }
+  #editButton{
+    margin-left: 1.25%;
+  }
+  #doneButton{
+    margin-left: 71%;
+  }
+
+}
+
+@media only screen and (min-width: 1440px) {
+  #div { 
+     background-image: url('background.jpg'); 
+  }
+  #myInput {
+    width:55%;
+    margin:0.25rem;
+  }
+  ul {width: 80%;
+    padding-left:  21%;
+    padding-top: 0.5%;
+  }
+  .imp{
+    right:11%;
+  }
+  #editButton{
+    margin-left: 21%;
+  }
+  #doneButton{
+    margin-left: 51%;
+  }
+
+}
+*/
 
